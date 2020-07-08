@@ -9857,7 +9857,7 @@ h1, h2, h3, h4, h5,
   font-size: 20px;
   line-height: 1.5;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 .slider-text p a {
   color: #fff;
@@ -10301,6 +10301,7 @@ h1, h2, h3, h4, h5,
   display: block;
   margin-bottom: 15px;
   font-size: 14px;
+  color: #000;
 }
 .staff .img {
   width: 110px;
@@ -10310,6 +10311,7 @@ h1, h2, h3, h4, h5,
 }
 .staff .text p {
   margin-bottom: 0;
+  font-size: 14px;
 }
 .staff .text p span {
   font-size: 20px;
@@ -10748,7 +10750,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  padding: 7em 0;
+  padding: 3em 0 1em 0;
   background: #252525;
 }
 .ftco-footer .ftco-footer-logo {
@@ -11803,4 +11805,24 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+.banner-text .heading {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+.banner-text .sub-head {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.error {
+  color: #DC143C;
+  margin-bottom: 0;
+}
+
+#volunteerForm .form-group {
+  margin-bottom: 0;
+  min-height: 5.5rem;
 }
