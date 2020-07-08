@@ -10,10 +10,10 @@
   rangeS.forEach(function(el) {
     el.oninput = function() {
       var slide1 = parseFloat(rangeS[0].value),
-        	slide2 = parseFloat(rangeS[1].value);
+          slide2 = parseFloat(rangeS[1].value);
 
       if (slide1 > slide2) {
-				[slide1, slide2] = [slide2, slide1];
+        [slide1, slide2] = [slide2, slide1];
         // var tmp = slide2;
         // slide2 = slide1;
         // slide1 = tmp;
@@ -26,9 +26,9 @@
 
   numberS.forEach(function(el) {
     el.oninput = function() {
-			var number1 = parseFloat(numberS[0].value),
-					number2 = parseFloat(numberS[1].value);
-			
+      var number1 = parseFloat(numberS[0].value),
+          number2 = parseFloat(numberS[1].value);
+      
       if (number1 > number2) {
         var tmp = number1;
         numberS[0].value = number2;
