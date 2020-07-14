@@ -309,12 +309,26 @@ AOS.init({
       name: "Please enter your name",
       email: "Please enter a valid email address",
     },
-    submitHandler: function (form) {
-      console.log({ form });
-      // some other code
-      // maybe disabling submit button
-      // then:
-      // $(form).submit();
+    submitHandler: function (form, event) {
+      event.preventDefault();
+      var url = form.action;
+      var data = {name: $(form).find('input[name="name"]').val(), email:$(form).find('input[name="email"]').val(), message: $(form).find('textarea[name="message"]').val()}
+      $(form).find('input[type="submit"]').val("Submitting..");
+      $.ajax({
+        type: "POST",
+        contentType:"application/x-www-form-urlencoded",
+        url: url,
+        data: data,
+        success: function(res){
+          $(form).find('input[type="submit"]').val("Send Message");
+          $(form).find("input[type=text], textarea").val("");
+          alert("Thanks for your interest, we will get back to you soon.");
+        },
+        error: function(res){
+          $(form).find('input[type="submit"]').val("Send Message");
+          alert("Something went wrong, please try again after sometime.");
+        },
+      });
     },
   });
 })(jQuery);
