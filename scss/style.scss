@@ -3,6 +3,8 @@
 
 $font-primary: 'Overpass',Arial, sans-serif;
 $font-secondary: 'Dosis',Arial, sans-serif;
+// $font-primary: "Open Sans", Arial, sans-serif;
+// $font-secondary: "Open Sans", Arial, sans-serif;
 
 $white: #fff;
 $black: #000;
@@ -762,7 +764,7 @@ h1, h2, h3, h4, h5,
 
 //STAFF
 .staff{
-    padding: 25px;
+    padding: 20px 25px 20px 25px;
     background: $white;
     -webkit-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 66px -24px rgba(0,0,0,0.2);

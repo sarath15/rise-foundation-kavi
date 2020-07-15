@@ -312,8 +312,8 @@ AOS.init({
     submitHandler: function (form, event) {
       event.preventDefault();
       var url = form.action;
-      var data = {name: $(form).find('input[name="name"]').val(), email:$(form).find('input[name="email"]').val(), message: $(form).find('textarea[name="message"]').val()}
-      $(form).find('input[type="submit"]').val("Submitting..");
+      var data = {name: $(form).find('input[name="name"]').val(), formtype: $(form).find('input[name="formtype"]').val(), email:$(form).find('input[name="email"]').val(), message: $(form).find('textarea[name="message"]').val()}
+      $(form).find('input[type="submit"]').val("Sending...");
       $.ajax({
         type: "POST",
         contentType:"application/x-www-form-urlencoded",
