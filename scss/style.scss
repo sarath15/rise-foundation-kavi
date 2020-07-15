@@ -2399,3 +2399,22 @@ textarea.form-control {
         min-height: 5.5rem;
     }
 }
+.navbar-brand{
+    margin-right: 0;
+}
+.navbar-brand-name{
+    font-size: 24px;
+    margin: 10px 0 -18px -25px;
+    line-height: 0.9;
+    span:not(:first-of-type){
+        font-size: 16px;
+        color: grey;
+    }
+    span:first-of-type{
+        color: $primary;
+        font-weight: 700;
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}

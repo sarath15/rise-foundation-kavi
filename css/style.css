@@ -11826,3 +11826,26 @@ textarea.form-control {
   margin-bottom: 0;
   min-height: 5.5rem;
 }
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.navbar-brand-name {
+  font-size: 24px;
+  margin: 25px 0 -18px -25px;
+  line-height: 0.8;
+}
+.navbar-brand-name span:not(:first-of-type) {
+  font-size: 16px;
+  color: #4a5562;
+}
+.navbar-brand-name span:first-of-type {
+  color: #7ac242;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .navbar-brand-name {
+    display: none;
+  }
+}
